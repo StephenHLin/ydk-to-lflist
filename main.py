@@ -15,7 +15,7 @@ with open('%s.ydk'%filename,'r') as temp_file:
     newlist = list(my_dict.items())
     print('Duplicate Entries Grouped.')   
 
-with open('%s.lflist'%filename,'w') as f: 
+with open('%s.lflist.conf'%filename,'w') as f: 
     f.write('!AFKyle Seasons\n')
     f.write('$whitelist\n')
     for i in newlist:
