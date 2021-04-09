@@ -5,8 +5,8 @@ with open('%s.ydk'%filename,'r') as temp_file:
     newlist = [line.replace('#main','').replace('#extra','').replace('!side','').replace('\n','') for line in temp_file]
     print('List Formatting Complete.')
 
-    del newlist[0] # delete header of deck file
-    del newlist[0] # delete useless newline
+    #del newlist[0] # delete header of deck file
+    #del newlist[0] # delete useless newline
     print('File Headers Stripped.')
     newlist = list(filter(None,newlist))
     print('Empty Lines Cleaned.')
