@@ -19,5 +19,8 @@ with open('%s.lflist'%filename,'w') as f:
     f.write('!AFKyle Seasons\n')
     f.write('$whitelist\n')
     for i in newlist:
-        f.write('%s %i --\n'%(i[0],i[1]))
+        if i[1] >3:
+            f.write('%s 3 --\n'%(i[0]))
+        else:
+            f.write('%s %i --\n'%(i[0],i[1]))
 print('File Generated: %s.lflist' %(filename))    
