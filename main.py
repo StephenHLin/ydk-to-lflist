@@ -23,4 +23,4 @@ with open('%s.lflist'%filename,'w') as f:
             f.write('%s 3 --\n'%(i[0]))
         else:
             f.write('%s %i --\n'%(i[0],i[1]))
-print('File Generated: %s.lflist' %(filename))    
+print('File Generated: %s.lflist.conf' %(filename))    
